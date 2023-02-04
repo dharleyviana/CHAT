@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VianaChat</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="app">
+
+    <div id="top">
+
+      <div id="user-info">
+        <img src="image/275030889_672276794025312_1299951111243782893_n.jpg" alt="Photo-Perfil-User" />
+
+        <div id="user-status">
+          <strong>Anderson Barbosa</strong>
+          <div class="status">
+            Online
+          </div>
+        </div>
+      </div>
+      <div id="close-chat">
+        <i class="ph-x"></i>
+      </div>
+
+    </div>
+
+    <div id="messages">
+      <div id="last-seen">Hoje 19:37</div>
+
+      <div class="messages">
+        <div class="message">
+          <div class="top">Anderson Barbosa - 19:40</div>
+          <div class="body">Iae mano, como andam os estudos de React?? </div>
+        </div>
+        <div class="message you">
+          <div class="top">Você - 19:41</div>
+          <div class="body">Está indo bem mano, a cada dia eu aprendo uma coisa nova, tipo <br> como nesse projeto que estou criando agora do "Chat-Online".</div>
+        </div>
+        <div class="message">
+          <div class="top">Anderson Barbosa - 19:43</div>
+          <div class="body">Ai simm, continua firme!! E não se esqueça de fazer o curso de TypeScript também, ele vai te ajudar muitoo!! 🤜🤛 </div>
+        </div>
+        <div class="message you">
+          <div class="top">Você - 19:44</div>
+          <div class="body sim">Simm!! Eu vou começar ele logo logo, e ja estou animado. 😎😁</div>
+        </div>
+        <div class="message">
+          <div class="top">Anderson Barbosa - 19:46</div>
+          <div class="body">Tu vai aprender muita coisa legal com o TypeScript, pode fazer o curso com calma pra absorver bem o conhecimento. </div>
+        </div>
+        <div class="message you">
+          <div class="top">Você - 19:49</div>
+          <div class="body">Beleza, vou fazer devagar, sem muita pressa e sempre revisão as coisas novas pra não esquecer nada.</div>
+        </div>
+        <div class="message">
+          <div class="top">Anderson Barbosa - 19:50</div>
+          <div class="body">Boaaa, está no caminho certo!</div>
+        </div>
+        <div class="message you">
+          <div class="top">Você - 19:53</div>
+          <div class="body sim">Pode ficar traquilo que eu vou ser o melhor programador de Cocos kkkkkkk. No futuro kkkkkk</div>
+        </div>
+    </div>
+    <div id="bottom">
+      <form action="">
+        <div class="input-wrapper">
+          <input type="text" placeholder="Digite sua mensagem">
+          <button>
+            <i class="ph-paper-plane-right"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+    <script>
+      const messeges = document.querySelector('.messages')
+      messeges.lastElementChild.scrollIntoView()
+    </script>
+</body>
+
+</html>
